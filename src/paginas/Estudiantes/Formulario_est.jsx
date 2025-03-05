@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import '../../Estilos/Crear_Esto.css';
+import '../../Estilos/Crear_Est.css';
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import axios from "axios";

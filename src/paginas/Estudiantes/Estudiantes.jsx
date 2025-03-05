@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation, Outlet } from "react-router-dom";
-import '../../Estilos/Pantalla.css'; 
+import '../../Estilos/Pantallas.css'; 
 const Estudiantes = () => {
     const location = useLocation();
     const urlActual = location.pathname;
