@@ -1,7 +1,7 @@
 import { Link, useLocation, Outlet, Navigate } from 'react-router-dom';
 import { useContext, useState } from 'react';
 import AuthContext from '../Context/AuthProvider';
-
+import '../layout/Dashboard.css'
 const Dashboard = () => {
   const [autenticado, setAutenticado] = useState(true); // Cambiar a tu lógica de autenticación
   const location = useLocation();
