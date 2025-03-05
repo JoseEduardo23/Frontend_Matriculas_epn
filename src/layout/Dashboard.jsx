@@ -1,6 +1,6 @@
 import { Link, useLocation, Outlet, Navigate } from 'react-router-dom';
 import { useContext, useState } from 'react';
-import '../Estilos/Dashboard.CSS';
+import '../Estilos/Dashboard.css';
 import AuthContext from '../Context/AuthProvider';
 
 const Dashboard = () => {
