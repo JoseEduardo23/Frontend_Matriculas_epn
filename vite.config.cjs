@@ -5,9 +5,12 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: '0.0.0.0',
-    port: process.env.PORT || 5174, // Make sure this is the port your React app runs on
+    port: process.env.PORT || 5174, 
     proxy: {
-      '/api': 'http://localhost:3000', // Proxy all API requests to your backend
+      '/api': 'http://localhost:3000', 
     },
   },
+  build: {
+    outDir: 'build', // Render busca esta carpeta por defecto
+  }
 });
