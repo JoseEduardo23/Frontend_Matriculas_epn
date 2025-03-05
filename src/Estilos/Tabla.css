@@ -1,0 +1,53 @@
+.tablaMa {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tablaMa:hover {
+    transform: scale(1.01);
+}
+
+.tablaMa thead {
+    background: linear-gradient(to left, rgba(3, 3, 78, 0.948) 0%, rgb(5, 5, 120) 50%, rgb(20, 20, 150) 100%);
+    color: white;
+    text-transform: uppercase;
+    transition: background 0.5s ease-in-out;
+}
+
+.tablecont th {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.tablecont th:last-child {
+    border-right: none;
+}
+
+.tbodyc {
+    text-align: center;
+}
+
+.tbodyc tr {
+    transition: background 0.2s ease-in-out; /* Para que el hover sea suave */
+}
+
+.tbodyc tr:hover {
+    background: rgba(0, 128, 0, 0.2); /* Color de fondo al pasar el mouse */
+}
+
+.tbodyc td {
+    padding: 10px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2); /* Bordes más sutiles */
+    transition: transform 0.1s ease-in-out;
+}
+
+.tbodyc td:hover {
+    transform: scale(1.01); /* Hace que el contenido de la celda se agrande al pasar el mouse */
+}
