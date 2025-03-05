@@ -8,10 +8,10 @@ const Materias = () => {
     return (
         <>
             <div className="estudiantes-container">
-                <p>Módulos de materias</p>
+                <p>Módulo de materias</p>
                 <ul>
                     <li className={`${urlActual === '/dashboard/materias/mat_crear' ? 'active' : ''}`}>
-                        <Link to="/dashboard/materias/mat_crear">Materias</Link>
+                        <Link to="/dashboard/materias/mat_crear">Ingresar materias</Link>
                     </li>
                     <li className={`${urlActual === '/dashboard/materias/listar_mat' ? 'active' : ''}`}>
                         <Link to="/dashboard/materias/listar_mat">Lista de materias</Link>

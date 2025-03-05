@@ -25,7 +25,7 @@ const Tabla_est = () => {
             const respuesta = await axios.get(url, options);
             setEstudiantes(respuesta.data);
         } catch (error) {
-            toast.error("Error inesperado o no se pudo conectar");
+            toast.error(error.response.data.msg);
         }
     };
 

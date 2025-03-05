@@ -76,7 +76,7 @@ export const Formulario_mat = ({ materia }) => {
     } catch (error) {
       if (error.response) {
         console.error("Error del servidor:", error.response.data);
-        toast.error(error.response.data.mensaje || "Error en la solicitud", { autoClose: 2000 });
+        toast.error(error.response.data.msg || "Error en la solicitud", { autoClose: 2000 });
       } else {
         console.error("Error inesperado:", error.message);
         toast.error("Error inesperado en la solicitud", { autoClose: 2000 });

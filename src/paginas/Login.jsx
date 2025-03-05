@@ -23,17 +23,17 @@ const Login = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log("Handle submit se esta ejecutando")
         try {
             const url = `http://localhost:3000/api/login`;
             const respuesta = await axios.post(url, form);
             localStorage.setItem("token", respuesta.data.token);
-            setAuth(respuesta.data);
-            console.log(respuesta);
+            console.log(respuesta.data);
             toast.success(respuesta.data.msg);
             navigate('/dashboard');
         } catch (error) {
             console.log(error);
-            toast.error(error.response?.data?.msg || "Login failed");
+            toast.error(error.response.data.msg);
         }
     };
 

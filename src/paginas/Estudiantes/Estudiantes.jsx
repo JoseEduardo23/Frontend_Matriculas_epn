@@ -10,10 +10,10 @@ const Estudiantes = () => {
             <p>Modulo de estudiantes</p>
             <ul>
                 <li className={`${urlActual === '/dashboard/estudiantes/est_crear' ? 'active' : ''}`}>
-                    <Link to="/dashboard/estudiantes/est_crear">Crear Estudiante</Link>
+                    <Link to="/dashboard/estudiantes/est_crear">Ingresar estudiante</Link>
                 </li>
                 <li className={`${urlActual === '/dashboard/estudiantes/listar_est' ? 'active' : ''}`}>
-                    <Link to="/dashboard/estudiantes/listar_est">Listar Estudiantes</Link>
+                    <Link to="/dashboard/estudiantes/listar_est">Listar estudiantes</Link>
                 </li>
             </ul>
 

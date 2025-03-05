@@ -30,12 +30,10 @@ const Visualizar_est = () => {
                 if (!respuesta || !respuesta.data) {
                     throw new Error("Respuesta vacía o no válida del servidor.");
                 }
-
-                console.log(respuesta.data);
                 setEstudiante(respuesta.data.estudiante || respuesta.data);
 
             } catch (error) {
-                console.error(error);
+                toast.error(error.response.data.msg)
                 setMensaje({ respuesta: error.response?.data?.msg || error.message || "Error desconocido", tipo: false });
             } finally {
                 setLoading(false);

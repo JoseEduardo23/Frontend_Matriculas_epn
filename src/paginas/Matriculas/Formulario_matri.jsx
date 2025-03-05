@@ -216,7 +216,7 @@ const FormularioMatricula = () => {
                                 <h3>Detalles del Estudiante:</h3>
                                 <p><strong>Nombre:</strong> {estudiante.nombre} {estudiante.apellido}</p>
                                 <p><strong>Cédula:</strong> {estudiante.cedula}</p>
-                                <p><strong>Email:</strong> {estudiante.correo}</p>
+                                <p><strong>Email:</strong> {estudiante.email}</p>
                             </div>
                         )}
                     </div>
