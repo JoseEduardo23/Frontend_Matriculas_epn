@@ -1,9 +1,9 @@
 import React, { useState, useContext } from "react"; // Ensure useContext is imported from React
 import axios from "axios";
-import '../Estilos/Login.css';
 import { toast, ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import AuthContext from '../Context/AuthProvider'; // Import your AuthContext
+import '../Estilos/Login.css'
 
 const Login = () => {
     const navigate = useNavigate();
