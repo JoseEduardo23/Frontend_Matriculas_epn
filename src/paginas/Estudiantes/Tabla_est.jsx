@@ -4,7 +4,7 @@ import AuthContext from "../../Context/AuthProvider";
 import { toast } from "react-toastify";
 import { MdDeleteForever, MdList, MdNoteAdd, MdInfo } from "react-icons/md";
 import axios from "axios";
-import '../../Estilos/Table_est.css'
+import '../../Estilos/Tabla_est.css'
 
 const Tabla_est = () => {
     const { auth } = useContext(AuthContext);
