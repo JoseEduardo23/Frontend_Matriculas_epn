@@ -11,7 +11,7 @@ const Materias = () => {
                 <p>Módulo de materias</p>
                 <ul>
                     <li className={`${urlActual === '/dashboard/materias/mat_crear' ? 'active' : ''}`}>
-                        <Link to="/dashboard/materias/mat_crear">Ingresar materias</Link>
+                        <Link to="/dashboard/materias/mat_crear">Ingresar materia</Link>
                     </li>
                     <li className={`${urlActual === '/dashboard/materias/listar_mat' ? 'active' : ''}`}>
                         <Link to="/dashboard/materias/listar_mat">Lista de materias</Link>
