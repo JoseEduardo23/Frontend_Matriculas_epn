@@ -11,6 +11,6 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'build', // Render busca esta carpeta por defecto
+    outDir: 'dist',
   }
 });
