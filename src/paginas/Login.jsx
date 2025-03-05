@@ -3,7 +3,6 @@ import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import AuthContext from '../Context/AuthProvider'; // Import your AuthContext
-import '../Estilos/Login.css'
 
 const Login = () => {
     const navigate = useNavigate();
